@@ -1,0 +1,161 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+/*navbar*/
+.navbar{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    background-color: #fff;
+}
+
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color:#222222 !important;
+}
+
+
+/* footer */
+
+.f-info-socials i{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.f-into-links a{
+    text-decoration: none;
+    color:#222222;
+}
+
+.f-into-links a:hover{
+    text-decoration:underline;
+}
+
+.f-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ebebeb;
+    height:8rem;
+    justify-content: space-evenly;
+}
+
+/* card */
+
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius:1rem !important;
+    width:100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.card-text{
+    font-weight:400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* Overlay effect */
+
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color: #fff;
+}
+
+
+
+/* show-listing */
+
+.show-img{
+    height: 30vh !important;
+    object-fit: cover !important;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left:0 !important;
+    padding-right: 0 !important;
+}
+
+/* filter */
+
+.filters{
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.filter{
+    text-align: center;
+    margin: 1.5rem 3rem 1rem 0.5rem;
+    opacity: 0.75;
+}
+
+.filter:hover{
+    cursor: pointer;
+    opacity: 1;
+    
+}
+
+.filter p{
+    font-size: 0.8rem;
+}
+
+/* tax-toggler */
+
+.tax-info{
+    display: none;
+  }
+
+  .tax-toggler{
+    border:1px solid black;
+    padding:1rem;
+    border-radius:1rem;
+    margin-left: auto;
+  }
+
+  /* navbar search */
+
+  .search-btn{
+    background-color: #fe424d !important;
+    color: #fff !important;
+    border-radius: 25px !important;
+  }
+
+  .search-btn i{
+    display: inline;
+    margin-right:0.8rem;
+  }
+
+  .search-input{
+    border-radius: 25px !important;
+    padding:0.5rem 3rem 0.5rem 3rem !important; 
+  }
+

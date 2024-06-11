@@ -1,0 +1,72 @@
+<% layout("/layouts/boilerplate")%>
+
+<div class="filters navbar navbar-expand-lg bg-body-tertiary">
+<div class="filter">
+  <div><i class="fa-solid fa-fire"></i></div>
+  <p>Trending</p>
+</div>
+<div class="filter">
+  <div><i class="fa-solid fa-bed"></i></div>
+  <p>Rooms</p>
+</div>
+<div class="filter">
+  <div><i class="fa-solid fa-city"></i></div>
+  <p>Iconic cities</p>
+</div>
+<div class="filter">
+  <div><i class="fa-solid fa-mountain"></i></div>
+  <p>Mountains</p>
+</div>
+<div class="filter">
+  <div><i class="fa-brands fa-fort-awesome-alt"></i></div>
+  <p>Castles</p>
+</div>
+<div class="filter">
+  <div><i class="fa-solid fa-person-swimming"></i></div>
+  <p>Artic</p>
+</div>
+
+<div class="tax-toggler">
+  <div class="form-check-reverse form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Display including taxes</label>
+  </div>
+</div>
+</div>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+        <%for(let listing of allListings){%>
+            <a href="/listings/<%=listing._id%>" class="listing-link">
+                <div class="card listing-card col" >
+                    <img src="<%=listing.image.url%>" class="card-img-top" alt="listing_image" style="height: 20rem;">
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b><%=listing.title%></b> <br>
+                        &#8377; <%=listing.price.toLocaleString("en-IN")%> / night
+                        <i class="tax-info">&nbsp;+18% GST</i>
+                      </p>
+                    </div>
+                  </div></a>
+              <%}%>
+        
+    </div>
+
+    <script>
+      let taxToggler= document.getElementById("flexSwitchCheckDefault");
+      taxToggler.addEventListener("click",()=>{
+        console.log("toggler is clicked");
+        let taxInfo = document.getElementsByClassName("tax-info");
+        for(let tax of taxInfo){
+          if(tax.style.display != "inline"){
+          tax.style.display = "inline";
+          }else{
+            tax.style.display = "none";
+          }
+        }
+        })
+    </script>
+
+    
+
+
+
