@@ -133,29 +133,15 @@ body{
 .tax-info{
     display: none;
   }
+.tax-toggler {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: auto;
+  width: 20rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border: 2px solid black;
+}
 
-  .tax-toggler{
-    border:1px solid black;
-    padding:1rem;
-    border-radius:1rem;
-    margin-left: auto;
-  }
 
-  /* navbar search */
-
-  .search-btn{
-    background-color: #fe424d !important;
-    color: #fff !important;
-    border-radius: 25px !important;
-  }
-
-  .search-btn i{
-    display: inline;
-    margin-right:0.8rem;
-  }
-
-  .search-input{
-    border-radius: 25px !important;
-    padding:0.5rem 3rem 0.5rem 3rem !important; 
-  }
 
